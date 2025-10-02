@@ -3,9 +3,9 @@ import random
 def get_numbers_ticket(min, max, quantity):
     if min < 1 or max > 1000:
         return []
-    if min > max:
+    elif min > max:
         return []
-    if quantity > (max - min + 1):
+    elif quantity > (max - min + 1):
         return []
 
     random_set = set()
